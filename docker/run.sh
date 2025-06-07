@@ -16,3 +16,4 @@ docker run \
     --volume=$PWD/../data:/data \
     vue:test \
     /bin/bash -c "echo 'Vue.js 3開発環境が起動しました'; tail -f /dev/null"
+
