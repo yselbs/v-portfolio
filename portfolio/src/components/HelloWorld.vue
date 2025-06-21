@@ -1,38 +1,14 @@
 <template>
 
-  <!-- <v-container class="bg-black" >
-  <v-sheet :height="900" :width="1440" color="black" class="mx-auto">
-  
 
-  <v-card class="mx-auto mt-4"
-    subtitle="TechFlow"
-    width="1080"
-    height="72"
-    color="green"
-    position: absolute>
-  </v-card>
-
-  <v-container class="bg-black text-h1 pl-8 pt-15" >
-    Innovative<br> 
-    Solutions
-  </v-container>
-  <v-container class="bg-black text-h1" >
-    FOR Modern
-  </v-container>
-
-
-  </v-sheet>
-
-  </v-container> -->
 <v-app>
-  <!-- アプリのメインコンテンツ領域を定義　画面全体を黒色に指定 -->
+  <!-- アプリのメインコンテンツ領域を定義 画面全体を黒色に指定 -->
   <v-main class="bg-black d-flex justify-center">
 
     <v-container  max-width="1440">
       
       <v-row >
         <v-card class="mx-auto mt-4"
-          subtitle="TechFlow"
           width="1080"
           height="72"
           color="green"
@@ -61,23 +37,45 @@
         </v-col>
       </v-row>
 
-      <v-row >
+      <v-row style="margin-top: 50px;">
         <v-col cols="4" offset="2" class="text-left text-h3 ">
           About Me
-          <p class="text-body-1"> 
-            学習ついでにサイトを作ってみました。figmaでサイトをデザインして
+          <p class="text-body-1">
+            普通の社会人です。社会人になって久しく手を動かすことをしてなかったので
+            vuetifyの学習ついでにサイトを作ってみました。figmaでサイトをデザインして
             そのデザインをもとにvuetifyを利用し作成しました。
+            使用している画像はすべてAIを使用して作成したものです。
+            これをベースにclineやcodexなどの生成AIにどんどん触れていきたいと思っています。
           </p>
         </v-col>
         <v-col>
-           <img src="../assets/logo.png">
+            <v-img src="../assets/self_face.jpg" max-width="300" contain></v-img>
         </v-col>
       </v-row>
-
-      <v-row >
-        <v-col></v-col>
-        <v-col></v-col>
-        <v-col></v-col>
+      
+      <v-row style="margin-top: 50px;">
+        <v-col cols="3" offset="2">
+          <v-img src="../assets/gazou_ai.jpg"  max-width="300" contain></v-img>
+            <p class="text-body-1">
+              画像処理AIの研究をしていた経験があります。具体的にはデータ拡張と呼ばれる学習データを補強する際に
+              使用される技術に対する研究を行っており、論文発表の経験もあります。
+              今は利用する側として話題の生成AIに興味があり、絶賛勉強中です。
+            </p>
+        </v-col>
+        <v-col cols="3" >
+          <v-img src="../assets/web_dev.jpg"  max-width="300" contain></v-img>
+            <p class="text-body-1">
+              簡単なwebサイトを作った経験があります。まだまだ勉強中で今後はアプリケーション開発にも
+              挑戦したいと考えています。
+            </p>
+        </v-col>
+        <v-col cols="3" >
+          <v-img src="../assets/serve_dev.jpg"  max-width="300" contain></v-img>
+            <p class="text-body-1">
+              アプリケーションのサーバーサイドの開発経験があります。まだまだ見習いなので
+              当事者意識をもって取り組んで、一人前のエンジニアになれるよう頑張りたいと思います。
+            </p>
+        </v-col>
       </v-row>
 
 
