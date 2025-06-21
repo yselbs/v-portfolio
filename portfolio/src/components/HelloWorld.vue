@@ -1,6 +1,6 @@
 <template>
 
-  <v-container class="bg-black" >
+  <!-- <v-container class="bg-black" >
   <v-sheet :height="900" :width="1440" color="black" class="mx-auto">
   
 
@@ -23,7 +23,67 @@
 
   </v-sheet>
 
-  </v-container>
+  </v-container> -->
+<v-app>
+  <!-- アプリのメインコンテンツ領域を定義　画面全体を黒色に指定 -->
+  <v-main class="bg-black d-flex justify-center">
+
+    <v-container  max-width="1440">
+      
+      <v-row >
+        <v-card class="mx-auto mt-4"
+          subtitle="TechFlow"
+          width="1080"
+          height="72"
+          color="green"
+          position: absolute>
+        </v-card>
+      </v-row>
+
+      <v-row >
+
+        <v-col cols="6" offset="2" class="text-left text-h1 ">
+            Innovative<br>
+            Solutions
+        </v-col>
+
+      </v-row>
+      
+      <v-row >
+        <v-col  cols="6" offset="4" class="text-left text-h1">
+            for  Modern
+        </v-col>
+      </v-row>
+
+      <v-row >
+        <v-col  cols="6" offset="6" class="text-left text-h1">
+            Challenges
+        </v-col>
+      </v-row>
+
+      <v-row >
+        <v-col cols="4" offset="2" class="text-left text-h3 ">
+          About Me
+          <p class="text-body-1"> 
+            学習ついでにサイトを作ってみました。figmaでサイトをデザインして
+            そのデザインをもとにvuetifyを利用し作成しました。
+          </p>
+        </v-col>
+        <v-col>
+           <img src="../assets/logo.png">
+        </v-col>
+      </v-row>
+
+      <v-row >
+        <v-col></v-col>
+        <v-col></v-col>
+        <v-col></v-col>
+      </v-row>
+
+
+    </v-container>
+  </v-main>
+</v-app>
 
 </template>
 
